@@ -3,4 +3,5 @@
 Test application for Salesbook on Junior IOS Developer position.
 
 MVVM + Coordinators
+
 Unit tests & UI Test
