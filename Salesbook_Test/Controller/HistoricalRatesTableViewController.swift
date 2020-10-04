@@ -16,7 +16,7 @@ class HistoricalRatesTableViewController: UITableViewController, Storyboarded {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("efef")
+ 
         let todayDate = getTodayDay()
         let weekAgoDate = getWeekAgoDate(from: Date())
         
