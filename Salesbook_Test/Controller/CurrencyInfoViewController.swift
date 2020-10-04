@@ -34,7 +34,6 @@ class CurrencyInfoViewController: UIViewController, UITableViewDelegate, UITable
         backgroundLabelView.layer.borderWidth = 2
         backgroundLabelView.layer.cornerRadius = 10
         backgroundLabelView.layer.borderColor = UIColor.white.cgColor
-            
     }
     
     override func viewWillDisappear(_ animated: Bool) {
