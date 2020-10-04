@@ -17,14 +17,15 @@ class MainCoordinator: Coordinator {
     }
     
     func start() {
-        let vc = ViewController.instantiate()
+        let vc = CurrencyInfoViewController.instantiate()
         vc.coordinator = self
         navigationController.pushViewController(vc, animated: false)
     }
     
-    func showRates () {
-        let vc = RatesViewController.instantiate()
+    func showRates (currencyCode: String) {
+        let vc = HistoricalRatesTableViewController.instantiate()
         vc.coordinator = self
+        vc.currencyCode = currencyCode
         navigationController.pushViewController(vc, animated: true)
     }
 }

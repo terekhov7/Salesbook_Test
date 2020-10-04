@@ -8,16 +8,15 @@
 import UIKit
 
 class HistoricalRatesTableViewCell: UITableViewCell {
-
+    
+    @IBOutlet var dateLabel: UILabel!
+    @IBOutlet var rateLabel: UILabel!
+    @IBOutlet var backgroundCustomView: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        self.layer.backgroundColor = UIColor.clear.cgColor
+        
+        backgroundCustomView.layer.cornerRadius = 10
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
 }
